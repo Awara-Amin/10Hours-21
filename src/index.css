@@ -43,3 +43,7 @@ h1 {
   color: red;
   letter-spacing: 5px;
 }
+
+.book p {
+  margin-top: 1rem;
+}

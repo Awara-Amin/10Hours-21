@@ -33,13 +33,7 @@ function BookList() {
         author={firstBook.author}
 
         // adding childern
-      >
-        <p>
-          Learn the basics of React in this comprehensive course. You will learn
-          about fundamentals, hooks, context API, react router, custom hooks,
-          and more.
-        </p>
-      </Book>
+      ></Book>
 
       {/* <Book title="random work" number={33} /> */}
       <Book
@@ -56,7 +50,7 @@ const Book = (propsOrWhatEver) => {
   console.log(propsOrWhatEver);
 
   //  destructuring, WOWWW!
-  const { img, title, author, number } = propsOrWhatEver;
+  const { img, title, author, number, childern } = propsOrWhatEver;
 
   return (
     <article className="book">
@@ -67,7 +61,8 @@ const Book = (propsOrWhatEver) => {
       <h1>{title}</h1>
       {/* <h1>{title}</h1> */}
       <h3>{author}</h3>
-      {propsOrWhatEver.childern}
+      {/* {propsOrWhatEver.childern} */}
+      {childern}
       {/* <h3>{author}</h3> */}
       {/* <p>{propsOrWhatEver.job}</p>
       <p>{propsOrWhatEver.title}</p> */}
